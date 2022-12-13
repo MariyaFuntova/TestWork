@@ -16,16 +16,11 @@ void NewArray(string[] array1, string[] array2)
 
 void PrintArray(string[] array)
 {
-    Console.Write("[");
     for(int i = 0; i < array.Length; i++)
     {
         Console.Write($"{array[i]}");
-        if (i < array.Length - 3)
-        {
-            Console.Write(", ");
-        }    
     }
-    Console.Write("]");
+    Console.WriteLine();
 }
 
 NewArray(array1,array2);
